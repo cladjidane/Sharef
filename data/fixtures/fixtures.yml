@@ -1,0 +1,85 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+# User:
+#   fabien:
+#     username: fabien
+#     password: changeme
+#     name:     Fabien Potencier
+#     email:    fabien.potencier@symfony-project.com
+#   kris:
+#     username: Kris.Wallsmith
+#     password: changeme
+#     name:     Kris Wallsmith
+#     email:    kris.wallsmith@symfony-project.com
+
+Category:
+  Category_1:
+    name: Couleurs
+    root_id: '1'
+    lft: '1'
+    rgt: '8'
+    level: '0'
+  Category_2:
+    name: Bleu
+    root_id: '1'
+    lft: '6'
+    rgt: '7'
+    level: '1'
+  Category_3:
+    name: Rouge
+    root_id: '1'
+    lft: '2'
+    rgt: '3'
+    level: '1'
+  Category_4:
+    name: Vert
+    root_id: '1'
+    lft: '4'
+    rgt: '5'
+    level: '1'
+  Category_5:
+    name: Langages
+    root_id: '5'
+    lft: '1'
+    rgt: '14'
+    level: '0'
+  Category_6:
+    name: Serveur
+    root_id: '5'
+    lft: '8'
+    rgt: '13'
+    level: '1'
+  Category_7:
+    name: Client
+    root_id: '5'
+    lft: '2'
+    rgt: '7'
+    level: '1'
+  Category_8:
+    name: Javascript
+    root_id: '5'
+    lft: '5'
+    rgt: '6'
+    level: '2'
+  Category_9:
+    name: ActionScript
+    root_id: '5'
+    lft: '3'
+    rgt: '4'
+    level: '2'
+  Category_10:
+    name: PHP
+    root_id: '5'
+    lft: '11'
+    rgt: '12'
+    level: '2'
+  Category_11:
+    name: ASP
+    root_id: '5'
+    lft: '9'
+    rgt: '10'
+    level: '2'

@@ -1,0 +1,8 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: mysql:host=127.0.0.1;dbname=c4_symfony_dba
+      username: c4_symfony
+      password: waptejhq
+      encoding: utf8

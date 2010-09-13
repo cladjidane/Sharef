@@ -1,0 +1,84 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+    
+#    
+#fiche:
+#  url: /ressources/:slug
+#  class: sfDoctrineRoute
+#  options: { model: Ressource, type: object }
+#  params: { module: ressource, action: fiche }
+#  requirements:
+#    sf_method: [get]
+
+# Ressources 
+ressources_index:
+  url: /ressource/index
+  params: { module: ressource, action: index }
+ressources_list:
+  url: /ressource/listing
+  params: { module: ressource, action: list }
+ressources_new:
+  url: /ressource/nouvel-avis/:archive
+  params: { module: ressource, action: new, archive: 0 }
+ressources_create:
+  url: /ressource/create
+  params: { module: ressource, action: create }
+ressources_edit:
+  url: /ressource/edit/:id
+  params: { module: ressource, action: edit }
+ressources_update:
+  url: /ressource/update/:id
+  params: { module: ressource, action: update }
+ressources_delete:
+  url: /ressource/delete/:id
+  params: { module: ressource, action: delete } 
+ 
+ 
+# category 
+category_index:
+  url: /category/index
+  params: { module: category, action: index }
+category_list:
+  url: /category/listing
+  params: { module: category, action: list }
+category_new:
+  url: /category/nouvel-avis/:archive
+  params: { module: category, action: new, archive: 0 }
+category_create:
+  url: /category/create
+  params: { module: category, action: create }
+category_edit:
+  url: /category/edit/:id
+  params: { module: category, action: edit }
+category_update:
+  url: /category/update/:id
+  params: { module: category, action: update }
+category_delete:
+  url: /category/delete/:id
+  params: { module: category, action: delete } 
+  
+category_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:               Category
+    module:              category
+    prefix_path:         category
+    column:              id
+    with_wildcard_routes: true
+
+category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:               Category
+    module:              category
+    prefix_path:         category
+    column:              id
+    with_wildcard_routes: true
+  
+default:
+  url:   /:module/:action/*
